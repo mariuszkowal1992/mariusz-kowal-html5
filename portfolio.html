@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfolio MARIUSZ KOWAL - Frontend Developer, Programista WordPress.">
+    <meta name="keywords" content="Mariusz Kowal, Portfolio, Frontend Developer, Programista WordPress, Projekty, Strony Internetowe">
+    <title>MARIUSZ KOWAL - Portfolio</title>
+    <!-- STYLE STRONY -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!-- HEADER Z NAWIGACJĄ -->
+    <header class="site-header">
+        <nav class="main-nav" aria-label="Główna nawigacja">
+            <a class="site-logo" href="index.html">MARIUSZ KOWAL</a>
+            <button class="menu-toggle" type="button" aria-label="Otwórz menu" aria-controls="primary-menu" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="nav-panel" id="primary-menu">
+                <button class="menu-close" type="button" aria-label="Zamknij menu">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html#start">START</a></li>
+                    <li><a href="index.html#o-mnie">O MNIE</a></li>
+                    <li><a href="index.html#uslugi">USŁUGI</a></li>
+                    <li><a class="is-active" href="index.html#portfolio" aria-current="page">PORTFOLIO</a></li>
+                    <li><a href="index.html#blog">BLOG</a></li>
+                    <li><a href="index.html#kontakt">KONTAKT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- GŁÓWNA TREŚĆ STRONY -->
+    <main>
+        <!-- SEKCJA PORTFOLIO -->
+        <section class="subpage-section portfolio-page-section">
+            <h1>Portfolio</h1>
+            <div class="subpage-grid">
+                <div class="subpage-column">
+                    <div class="portfolio-list" data-pagination data-items-per-page="4">
+                        <article class="portfolio-card" data-pagination-item data-category="html5">
+                            <img src="https://placehold.co/800x600/050807/39ff88?text=Projekt+WordPress" alt="Screen projektu WordPress" loading="lazy" decoding="async">
+                            <div class="portfolio-card__content">
+                                <h5>Strona Firmowa WordPress</h5>
+                                <p>Responsywna strona firmowa oparta o WordPress, przygotowana z myślą o szybkiej prezentacji usług, dobrej wydajności i wygodnej edycji treści.</p>
+                                <a class="button button--outline" href="single-project.html">WIĘCEJ INFORMACJI</a>
+                            </div>
+                        </article>
+                        <article class="portfolio-card" data-pagination-item data-category="wordpress">
+                            <img src="https://placehold.co/800x600/050807/39ff88?text=Szablon+HTML5" alt="Screen projektu HTML5" loading="lazy" decoding="async">
+                            <div class="portfolio-card__content">
+                                <h5>Szablon HTML5 Dla Usług</h5>
+                                <p>Semantyczny szablon HTML5 z responsywną siatką, terminalowym stylem i strukturą gotową do wdrożenia jako statyczna strona lub motyw.</p>
+                                <a class="button button--outline" href="single-project.html">WIĘCEJ INFORMACJI</a>
+                            </div>
+                        </article>
+                        <article class="portfolio-card" data-pagination-item data-category="wordpress">
+                            <img src="https://placehold.co/800x600/050807/39ff88?text=Panel+WordPress" alt="Screen panelu WordPress" loading="lazy" decoding="async">
+                            <div class="portfolio-card__content">
+                                <h5>Dedykowany Panel WordPress</h5>
+                                <p>Rozbudowa panelu WordPress o własne typy wpisów, pola edycyjne i uporządkowany model danych dla łatwiejszego zarządzania treścią.</p>
+                                <a class="button button--outline" href="single-project.html">WIĘCEJ INFORMACJI</a>
+                            </div>
+                        </article>
+                        <article class="portfolio-card" data-pagination-item data-category="wordpress">
+                            <img src="https://placehold.co/800x600/050807/39ff88?text=Landing+Page" alt="Screen landing page" loading="lazy" decoding="async">
+                            <div class="portfolio-card__content">
+                                <h5>Landing Page Produktowy</h5>
+                                <p>Jednostronicowy landing page z sekcjami sprzedażowymi, formularzem kontaktowym, responsywnym układem i zoptymalizowanymi zasobami.</p>
+                                <a class="button button--outline" href="single-project.html">WIĘCEJ INFORMACJI</a>
+                            </div>
+                        </article>
+                        <article class="portfolio-card" data-pagination-item data-category="wordpress">
+                            <img src="https://placehold.co/800x600/050807/39ff88?text=WordPress+Care" alt="Screen projektu opieki WordPress" loading="lazy" decoding="async">
+                            <div class="portfolio-card__content">
+                                <h5>System Opieki WordPress</h5>
+                                <p>Projekt zaplecza do obsługi aktualizacji, kopii zapasowych, formularzy i podstawowego monitorowania działania strony WordPress.</p>
+                                <a class="button button--outline" href="single-project.html">WIĘCEJ INFORMACJI</a>
+                            </div>
+                        </article>
+                        <article class="portfolio-card" data-pagination-item data-category="wordpress">
+                            <img src="https://placehold.co/800x600/050807/39ff88?text=Plugin+WordPress" alt="Screen projektu wtyczki WordPress" loading="lazy" decoding="async">
+                            <div class="portfolio-card__content">
+                                <h5>Wtyczka WordPress Dla Formularzy</h5>
+                                <p>Dedykowana wtyczka rozszerzająca formularze o dodatkową walidację, zapis danych i prosty panel ustawień w administracji WordPress.</p>
+                                <a class="button button--outline" href="single-project.html">WIĘCEJ INFORMACJI</a>
+                            </div>
+                        </article>
+                    </div>
+                    <nav class="pagination" aria-label="Paginacja projektów" data-pagination-controls></nav>
+                </div>
+                <aside class="subpage-column portfolio-sidebar" aria-label="Sidebar portfolio">
+                    <div class="sidebar-widget">
+                        <h3>Filtruj Według Kategorii</h3>
+                        <div class="filter-buttons" data-filter-controls>
+                            <button class="is-active" type="button" data-filter="all" aria-pressed="true">Wszystkie</button>
+                            <button type="button" data-filter="wordpress" aria-pressed="false">WordPress</button>
+                            <button type="button" data-filter="html5" aria-pressed="false">HTML5</button>
+                        </div>
+                    </div>
+                    <div class="sidebar-widget sidebar-widget--ad">
+                        <p>Tu może znaleźć się twoja reklama.</p>
+                    </div>
+                    <div class="sidebar-widget sidebar-widget--ad">
+                        <p>Tu może znaleźć się twoja reklama.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <!-- STOPKA STRONY -->
+    <footer class="site-footer">
+        <p>&copy; 2026 MARIUSZ KOWAL. WSZELKIE PRAWA ZASTRZEŻONE.</p>
+    </footer>
+    <!-- GŁÓWNY SKRYPT STRONY -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
