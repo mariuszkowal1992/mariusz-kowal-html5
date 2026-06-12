@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Blog MARIUSZ KOWAL - Frontend Developer, Programista WordPress.">
+    <meta name="keywords" content="Mariusz Kowal, Blog, Frontend Developer, Programista WordPress, WordPress, Strony Internetowe">
+    <title>MARIUSZ KOWAL - Blog</title>
+    <!-- STYLE STRONY -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!-- HEADER Z NAWIGACJĄ -->
+    <header class="site-header">
+        <nav class="main-nav" aria-label="Główna nawigacja">
+            <a class="site-logo" href="index.html">MARIUSZ KOWAL</a>
+            <button class="menu-toggle" type="button" aria-label="Otwórz menu" aria-controls="primary-menu" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="nav-panel" id="primary-menu">
+                <button class="menu-close" type="button" aria-label="Zamknij menu">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html#start">START</a></li>
+                    <li><a href="index.html#o-mnie">O MNIE</a></li>
+                    <li><a href="index.html#uslugi">USŁUGI</a></li>
+                    <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+                    <li><a class="is-active" href="index.html#blog" aria-current="page">BLOG</a></li>
+                    <li><a href="index.html#kontakt">KONTAKT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- GŁÓWNA TREŚĆ STRONY -->
+    <main>
+        <!-- SEKCJA BLOG -->
+        <section class="subpage-section blog-page-section">
+            <h1>Blog</h1>
+            <div class="subpage-grid">
+                <div class="subpage-column">
+                    <div class="blog-list" data-pagination data-items-per-page="4">
+                        <article class="blog-card" data-pagination-item>
+                            <img src="https://placehold.co/800x600/050807/39ff88?text=WordPress+Tips" alt="Screen wpisu o WordPress" loading="lazy" decoding="async">
+                            <div class="blog-card__content">
+                                <h5>Jak Przyspieszyć Stronę WordPress</h5>
+                                <div class="blog-card__meta">
+                                    <span>WordPress</span>
+                                    <time datetime="2026-06-04">04.06.2026</time>
+                                </div>
+                                <p>Techniczne działania, które pomagają ograniczyć czas ładowania strony, poprawić Core Web Vitals i uporządkować zasoby motywu.</p>
+                                <a class="button button--outline" href="single-post.html">CZYTAJ DALEJ</a>
+                            </div>
+                        </article>
+                        <article class="blog-card" data-pagination-item>
+                            <img src="https://placehold.co/800x600/050807/39ff88?text=Frontend" alt="Screen wpisu o frontendzie" loading="lazy" decoding="async">
+                            <div class="blog-card__content">
+                                <h5>Semantyczny HTML W Praktyce</h5>
+                                <div class="blog-card__meta">
+                                    <span>Frontend</span>
+                                    <time datetime="2026-05-28">28.05.2026</time>
+                                </div>
+                                <p>Najważniejsze zasady budowania czytelnej struktury HTML, która ułatwia stylowanie, dostępność i rozwój projektu.</p>
+                                <a class="button button--outline" href="single-post.html">CZYTAJ DALEJ</a>
+                            </div>
+                        </article>
+                        <article class="blog-card" data-pagination-item>
+                            <img src="https://placehold.co/800x600/050807/39ff88?text=AI+Tools" alt="Screen wpisu o narzędziach AI" loading="lazy" decoding="async">
+                            <div class="blog-card__content">
+                                <h5>AI W Pracy Frontend Developera</h5>
+                                <div class="blog-card__meta">
+                                    <span>AI</span>
+                                    <time datetime="2026-05-14">14.05.2026</time>
+                                </div>
+                                <p>Praktyczne przykłady wykorzystania AI przy analizie kodu, refaktoryzacji, treściach i przygotowaniu komponentów.</p>
+                                <a class="button button--outline" href="single-post.html">CZYTAJ DALEJ</a>
+                            </div>
+                        </article>
+                        <article class="blog-card" data-pagination-item>
+                            <img src="https://placehold.co/800x600/050807/39ff88?text=VPS" alt="Screen wpisu o VPS" loading="lazy" decoding="async">
+                            <div class="blog-card__content">
+                                <h5>Podstawowa Konfiguracja VPS Pod WordPress</h5>
+                                <div class="blog-card__meta">
+                                    <span>Serwery</span>
+                                    <time datetime="2026-05-02">02.05.2026</time>
+                                </div>
+                                <p>Przegląd elementów konfiguracji VPS: domeny, SSL, FTP, MySQL, poczta i panel administracyjny dla strony WordPress.</p>
+                                <a class="button button--outline" href="single-post.html">CZYTAJ DALEJ</a>
+                            </div>
+                        </article>
+                        <article class="blog-card" data-pagination-item>
+                            <img src="https://placehold.co/800x600/050807/39ff88?text=SEO" alt="Screen wpisu o SEO" loading="lazy" decoding="async">
+                            <div class="blog-card__content">
+                                <h5>Techniczne Podstawy SEO Na Stronie</h5>
+                                <div class="blog-card__meta">
+                                    <span>SEO</span>
+                                    <time datetime="2026-04-18">18.04.2026</time>
+                                </div>
+                                <p>Krótka lista technicznych elementów SEO: nagłówki, meta dane, adresy URL, linkowanie, struktura treści i wydajność.</p>
+                                <a class="button button--outline" href="single-post.html">CZYTAJ DALEJ</a>
+                            </div>
+                        </article>
+                    </div>
+                    <nav class="pagination" aria-label="Paginacja wpisów" data-pagination-controls></nav>
+                </div>
+                <aside class="subpage-column blog-sidebar" aria-label="Sidebar bloga">
+                    <div class="sidebar-widget">
+                        <h3>Wyszukiwarka</h3>
+                        <form class="search-form" action="search.html" method="get" role="search">
+                            <label class="sr-only" for="blog-search">Szukaj wpisów</label>
+                            <input id="blog-search" name="s" type="search" placeholder="Szukaj wpisów...">
+                            <button class="button button--primary" type="submit">SZUKAJ</button>
+                        </form>
+                    </div>
+                    <div class="sidebar-widget">
+                        <h3>Kategorie</h3>
+                        <ul class="sidebar-list">
+                            <li><a href="#">WordPress</a></li>
+                            <li><a href="#">Frontend</a></li>
+                            <li><a href="#">Serwery VPS</a></li>
+                            <li><a href="#">SEO</a></li>
+                            <li><a href="#">AI</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget">
+                        <h3>Tagi</h3>
+                        <div class="tag-list">
+                            <a href="#">HTML5</a>
+                            <a href="#">CSS3</a>
+                            <a href="#">JavaScript</a>
+                            <a href="#">PHP</a>
+                            <a href="#">WordPress</a>
+                            <a href="#">Hestia CP</a>
+                        </div>
+                    </div>
+                    <div class="sidebar-widget sidebar-widget--ad">
+                        <p>Tu może znaleźć się twoja reklama.</p>
+                    </div>
+                    <div class="sidebar-widget sidebar-widget--ad">
+                        <p>Tu może znaleźć się twoja reklama.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <!-- STOPKA STRONY -->
+    <footer class="site-footer">
+        <p>&copy; 2026 MARIUSZ KOWAL. WSZELKIE PRAWA ZASTRZEŻONE.</p>
+    </footer>
+    <!-- GŁÓWNY SKRYPT STRONY -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
