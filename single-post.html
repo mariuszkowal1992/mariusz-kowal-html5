@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Wpis blogowy MARIUSZ KOWAL - Frontend Developer, Programista WordPress.">
+    <meta name="keywords" content="Mariusz Kowal, Blog, Wpis Blogowy, Frontend Developer, Programista WordPress, WordPress">
+    <title>MARIUSZ KOWAL - Wpis Blogowy</title>
+    <!-- STYLE STRONY -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!-- HEADER Z NAWIGACJĄ -->
+    <header class="site-header">
+        <nav class="main-nav" aria-label="Główna nawigacja">
+            <a class="site-logo" href="index.html">MARIUSZ KOWAL</a>
+            <button class="menu-toggle" type="button" aria-label="Otwórz menu" aria-controls="primary-menu" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="nav-panel" id="primary-menu">
+                <button class="menu-close" type="button" aria-label="Zamknij menu">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html#start">START</a></li>
+                    <li><a href="index.html#o-mnie">O MNIE</a></li>
+                    <li><a href="index.html#uslugi">USŁUGI</a></li>
+                    <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+                    <li><a class="is-active" href="index.html#blog" aria-current="page">BLOG</a></li>
+                    <li><a href="index.html#kontakt">KONTAKT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- GŁÓWNA TREŚĆ STRONY -->
+    <main>
+        <!-- SEKCJA WPISU -->
+        <section class="subpage-section single-post-section">
+            <div class="subpage-grid">
+                <article class="subpage-column single-post-content">
+                    <h1>Jak Przyspieszyć Stronę WordPress</h1>
+                    <div class="single-post-meta">
+                        <span>WordPress</span>
+                        <time datetime="2026-06-04">04.06.2026</time>
+                    </div>
+                    <img class="single-post-image" src="https://placehold.co/800x600/050807/39ff88?text=WordPress+Performance" alt="Obraz wyróżniający wpis o przyspieszaniu WordPress" loading="lazy" decoding="async">
+                    <div class="single-post-body">
+                        <p>
+                            Szybkość strony WordPress zależy od kilku warstw: jakości motywu, liczby wtyczek, konfiguracji serwera, rozmiaru zasobów oraz sposobu ładowania skryptów. Największy efekt zwykle daje uporządkowanie frontendu i ograniczenie tego, co przeglądarka musi pobrać przy pierwszym wejściu użytkownika.
+                        </p>
+                        <p>
+                            W praktyce warto zacząć od audytu motywu, sprawdzenia zapytań do bazy danych, optymalizacji obrazów oraz usunięcia zbędnych bibliotek ładowanych globalnie. Dopiero później dobrze jest wdrażać cache, CDN i bardziej zaawansowane mechanizmy optymalizacji.
+                        </p>
+                        <pre><code>add_action('wp_enqueue_scripts', function () {
+    if (!is_page('kontakt')) {
+        wp_dequeue_script('contact-form-7');
+        wp_dequeue_style('contact-form-7');
+    }
+}, 99);</code></pre>
+                        <blockquote>
+                            <p>Dobra optymalizacja WordPressa nie polega na instalowaniu kolejnej wtyczki, tylko na świadomym usuwaniu zbędnego kodu z miejsca, w którym nie jest potrzebny.</p>
+                        </blockquote>
+                        <p>
+                            Taki sposób pracy pozwala ograniczyć wagę strony, poprawić wyniki testów wydajności i jednocześnie zachować stabilność panelu administracyjnego. Najważniejsze jest mierzenie zmian po każdym etapie, bo optymalizacja bez testów szybko zamienia się w zgadywanie.
+                        </p>
+                    </div>
+                    <div class="single-post-actions">
+                        <a class="button button--primary" href="blog.html">WRÓĆ DO BLOGA</a>
+                    </div>
+                    <!-- SEKCJA KOMENTARZY -->
+                    <section class="comments-area" id="comments">
+                        <h2>Komentarze</h2>
+                        <ol class="comment-list">
+                            <li class="comment">
+                                <article class="comment-body">
+                                    <footer class="comment-meta">
+                                        <div class="comment-author vcard">
+                                            <span class="avatar">
+                                                <i class="fa-solid fa-user" aria-hidden="true"></i>
+                                            </span>
+                                            <b class="fn">Tomasz Nowak</b>
+                                        </div>
+                                        <div class="comment-metadata">
+                                            <time datetime="2026-06-04T12:30">04.06.2026 o 12:30</time>
+                                        </div>
+                                    </footer>
+                                    <div class="comment-content">
+                                        <p>Bardzo przydatny wpis. Szczególnie fragment o wyłączaniu skryptów tylko tam, gdzie nie są potrzebne, dobrze pokazuje praktyczne podejście do optymalizacji.</p>
+                                    </div>
+                                    <div class="reply">
+                                        <a href="#respond">Odpowiedz</a>
+                                    </div>
+                                </article>
+                                <ol class="children">
+                                    <li class="comment bypostauthor">
+                                        <article class="comment-body">
+                                            <footer class="comment-meta">
+                                                <div class="comment-author vcard">
+                                                    <span class="avatar">
+                                                        <i class="fa-solid fa-user-gear" aria-hidden="true"></i>
+                                                    </span>
+                                                    <b class="fn">Mariusz Kowal</b>
+                                                </div>
+                                                <div class="comment-metadata">
+                                                    <time datetime="2026-06-04T13:05">04.06.2026 o 13:05</time>
+                                                </div>
+                                            </footer>
+                                            <div class="comment-content">
+                                                <p>Dokładnie tak. W WordPressie warto najpierw sprawdzić, które zasoby są ładowane globalnie, a dopiero później decydować o cache i dodatkowych narzędziach optymalizacyjnych.</p>
+                                            </div>
+                                            <div class="reply">
+                                                <a href="#respond">Odpowiedz</a>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="comment">
+                                <article class="comment-body">
+                                    <footer class="comment-meta">
+                                        <div class="comment-author vcard">
+                                            <span class="avatar">
+                                                <i class="fa-solid fa-user" aria-hidden="true"></i>
+                                            </span>
+                                            <b class="fn">Anna Zielińska</b>
+                                        </div>
+                                        <div class="comment-metadata">
+                                            <time datetime="2026-06-05T09:15">05.06.2026 o 09:15</time>
+                                        </div>
+                                    </footer>
+                                    <div class="comment-content">
+                                        <p>Czy podobne podejście można zastosować też do stylów CSS ładowanych przez wtyczki formularzy albo galerie?</p>
+                                    </div>
+                                    <div class="reply">
+                                        <a href="#respond">Odpowiedz</a>
+                                    </div>
+                                </article>
+                                <ol class="children">
+                                    <li class="comment bypostauthor">
+                                        <article class="comment-body">
+                                            <footer class="comment-meta">
+                                                <div class="comment-author vcard">
+                                                    <span class="avatar">
+                                                        <i class="fa-solid fa-user-gear" aria-hidden="true"></i>
+                                                    </span>
+                                                    <b class="fn">Mariusz Kowal</b>
+                                                </div>
+                                                <div class="comment-metadata">
+                                                    <time datetime="2026-06-05T09:42">05.06.2026 o 09:42</time>
+                                                </div>
+                                            </footer>
+                                            <div class="comment-content">
+                                                <p>Tak, ale trzeba robić to ostrożnie. Najlepiej warunkowo usuwać style tylko na podstronach, na których dana wtyczka nie renderuje żadnego elementu.</p>
+                                            </div>
+                                            <div class="reply">
+                                                <a href="#respond">Odpowiedz</a>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                        <div class="comment-respond" id="respond">
+                            <h3>Dodaj Komentarz</h3>
+                            <form class="comment-form" action="#" method="post">
+                                <p class="comment-notes">Twój adres e-mail nie zostanie opublikowany. Wymagane pola są oznaczone gwiazdką.</p>
+                                <label for="comment-author">Imię *</label>
+                                <input id="comment-author" name="author" type="text" autocomplete="name" required>
+
+                                <label for="comment-email">E-mail *</label>
+                                <input id="comment-email" name="email" type="email" autocomplete="email" required>
+
+                                <label for="comment-url">Strona internetowa</label>
+                                <input id="comment-url" name="url" type="url" autocomplete="url">
+
+                                <label for="comment-text">Komentarz *</label>
+                                <textarea id="comment-text" name="comment" rows="7" required></textarea>
+
+                                <button class="button button--primary" type="submit">DODAJ KOMENTARZ</button>
+                            </form>
+                        </div>
+                    </section>
+                </article>
+                <aside class="subpage-column blog-sidebar single-post-sidebar" aria-label="Sidebar wpisu">
+                    <div class="sidebar-widget">
+                        <h3>Wyszukiwarka</h3>
+                        <form class="search-form" action="search.html" method="get" role="search">
+                            <label class="sr-only" for="single-post-search">Szukaj wpisów</label>
+                            <input id="single-post-search" name="s" type="search" placeholder="Szukaj wpisów...">
+                            <button class="button button--primary" type="submit">SZUKAJ</button>
+                        </form>
+                    </div>
+                    <div class="sidebar-widget">
+                        <h3>Kategorie</h3>
+                        <ul class="sidebar-list">
+                            <li><a href="#">WordPress</a></li>
+                            <li><a href="#">Frontend</a></li>
+                            <li><a href="#">Serwery VPS</a></li>
+                            <li><a href="#">SEO</a></li>
+                            <li><a href="#">AI</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget">
+                        <h3>Tagi</h3>
+                        <div class="tag-list">
+                            <a href="#">HTML5</a>
+                            <a href="#">CSS3</a>
+                            <a href="#">JavaScript</a>
+                            <a href="#">PHP</a>
+                            <a href="#">WordPress</a>
+                            <a href="#">Hestia CP</a>
+                        </div>
+                    </div>
+                    <div class="sidebar-widget sidebar-widget--ad">
+                        <p>Tu może znaleźć się twoja reklama.</p>
+                    </div>
+                    <div class="sidebar-widget sidebar-widget--ad">
+                        <p>Tu może znaleźć się twoja reklama.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <!-- STOPKA STRONY -->
+    <footer class="site-footer">
+        <p>&copy; 2026 MARIUSZ KOWAL. WSZELKIE PRAWA ZASTRZEŻONE.</p>
+    </footer>
+    <!-- GŁÓWNY SKRYPT STRONY -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
