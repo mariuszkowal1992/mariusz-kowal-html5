@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="MARIUSZ KOWAL - Frontend Developer, Programista WordPress.">
+    <meta name="keywords" content="Mariusz Kowal, Frontend Developer, Programista WordPress, Portfolio, Strony Internetowe, Sklepy Internetowe">
+    <title>MARIUSZ KOWAL - Portfolio</title>
+    <!-- STYLE STRONY -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!-- HEADER Z NAWIGACJĄ -->
+    <header class="site-header">
+        <nav class="main-nav" aria-label="Główna nawigacja">
+            <a class="site-logo" href="index.html">MARIUSZ KOWAL</a>
+            <button class="menu-toggle" type="button" aria-label="Otwórz menu" aria-controls="primary-menu" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="nav-panel" id="primary-menu">
+                <button class="menu-close" type="button" aria-label="Zamknij menu">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#start">START</a></li>
+                    <li><a href="#o-mnie">O MNIE</a></li>
+                    <li><a href="#uslugi">USŁUGI</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#kontakt">KONTAKT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- GŁÓWNA TREŚĆ STRONY -->
+    <main>
+        <!-- SEKCJA START -->
+        <section class="start-section reveal-on-scroll" id="start">
+            <div class="start-column start-content">
+                <h1>Mariusz Kowal</h1>
+                <p>
+                    Frontend developer, programista WordPress i freelancer tworzący szybkie, responsywne oraz dopracowane strony internetowe.<br>
+                    Zapraszam do zapoznania się z moim portfolio i ofertą usług. Jeśli masz pytania lub chcesz omówić współpracę, skontaktuj się ze mną!
+                </p>
+                <div class="start-actions">
+                    <a class="button button--primary" href="#uslugi">ZOBACZ MOJE USŁUGI</a>
+                    <a class="button button--outline" href="#portfolio">ZOBACZ MOJE PORTFOLIO</a>
+                </div>
+            </div>
+            <div class="start-column start-code">
+                <div class="code-editor" aria-label="Przykładowy kod WordPress">
+                    <div class="code-editor__bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <pre><code>&lt;?php
+add_action('wp_enqueue_scripts', function () {
+    $theme_uri = get_template_directory_uri();
+
+    wp_enqueue_style('mk-style', get_stylesheet_uri());
+    wp_enqueue_script('mk-main', $theme_uri . '/assets/js/main.js');
+});
+
+add_filter('excerpt_length', function () {
+    return 18;
+});
+
+add_theme_support('post-thumbnails');</code></pre>
+                </div>
+            </div>
+        </section>
+        <!-- SEKCJA O MNIE -->
+        <section class="page-section about-section reveal-on-scroll" id="o-mnie">
+            <h2>O Mnie</h2>
+            <div class="about-grid">
+                <div class="about-column about-column--image">
+                    <figure class="about-image">
+                        <img src="assets/img/mariusz-kowal.webp" alt="Mariusz Kowal" loading="lazy" decoding="async">
+                    </figure>
+                </div>
+                <div class="about-column about-column--text">
+                    <h3>Więcej Informacji O Mnie</h3>
+                    <p>
+                        Nazywam się Mariusz Kowal, a z wykształcenia jestem technikiem informatykiem. Obecnie pracuję jako freelancer przy tworzeniu stron internetowych opartych o WordPress, dbając o ich responsywność, przejrzystą strukturę, szybkość działania oraz wygodę późniejszej edycji przez użytkownika. W projektach łączę wiedzę techniczną z praktycznym podejściem do potrzeb klienta, dlatego zależy mi na tym, aby każda strona była nie tylko estetyczna, ale też funkcjonalna i gotowa do dalszego rozwoju.<br>
+                        Interesuję się także sztuczną inteligencją AI, którą w pracy wykorzystuję do analizy kodu, automatyzacji powtarzalnych zadań, generowania koncepcji treści i usprawniania procesu wdrożeń.<br>
+                        Poza programowaniem w kręgu moich zainteresowań i pasji jest tworzenie gier komputerowych oraz modelowanie w programie 3D Blender.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- SEKCJA USŁUGI -->
+        <section class="page-section services-section reveal-on-scroll" id="uslugi">
+            <h2>Usługi</h2>
+            <div class="services-grid">
+                <article class="service-card reveal-on-scroll">
+                    <i class="fa-solid fa-server" aria-hidden="true"></i>
+                    <h5>Konfiguracja Serwerów VPS</h5>
+                    <p>Konfiguruję serwery VPS pod strony WordPress i aplikacje WWW, w tym panel Hestia CP, konta FTP, bazy MySQL, domeny, certyfikaty SSL oraz pocztę. Przygotowuję środowisko tak, aby było stabilne, wygodne w administracji i gotowe do dalszej rozbudowy.</p>
+                </article>
+                <article class="service-card reveal-on-scroll">
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                    <h5>Projektowanie Szablonów HTML5</h5>
+                    <p>Projektuję responsywne szablony HTML5 z wykorzystaniem semantycznej struktury, CSS3, media queries i dobrych praktyk dostępności. Dbam o czysty kod, logiczny podział sekcji oraz poprawne wyświetlanie na desktopie, tablecie i telefonie.</p>
+                </article>
+                <article class="service-card reveal-on-scroll">
+                    <i class="fa-brands fa-wordpress" aria-hidden="true"></i>
+                    <h5>Programowanie Motywów WordPress</h5>
+                    <p>Programuję motywy WordPress od podstaw lub na bazie przygotowanego HTML, tworząc pliki szablonów, własne pola, typy wpisów i sekcje możliwe do edycji w panelu. Łączę frontend z logiką WordPressa bez zbędnego obciążania strony.</p>
+                </article>
+                <article class="service-card reveal-on-scroll">
+                    <i class="fa-solid fa-plug" aria-hidden="true"></i>
+                    <h5>Programowanie Wtyczek WordPress</h5>
+                    <p>Tworzę dedykowane wtyczki WordPress rozszerzające funkcje strony, panelu administracyjnego lub formularzy. Przygotowuję krótkie integracje, własne shortcode, ustawienia w panelu oraz rozwiązania dopasowane do konkretnego procesu.</p>
+                </article>
+                <article class="service-card reveal-on-scroll">
+                    <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                    <h5>Kompletne Strony Internetowe z WordPress</h5>
+                    <p>Realizuję kompletne strony na WordPress: analiza struktury, projekt układu, wdrożenie motywu, konfiguracja wtyczek, formularzy, podstron i podstawowych ustawień SEO. Po zakończeniu strona jest gotowa do publikacji i samodzielnej edycji.</p>
+                </article>
+                <article class="service-card reveal-on-scroll">
+                    <i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i>
+                    <h5>SEO / Tworzenie Treści</h5>
+                    <p>Przygotowuję podstawową optymalizację SEO: strukturę nagłówków, meta title, meta description, linkowanie wewnętrzne, adresy URL i treści dopasowane do fraz. Tworzę teksty czytelne dla użytkowników oraz przyjazne wyszukiwarkom.</p>
+                </article>
+                <article class="service-card reveal-on-scroll">
+                    <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                    <h5>Opieka Nad Stronami WordPress</h5>
+                    <p>Zajmuję się bieżącą opieką nad stronami WordPress: aktualizacjami rdzenia, motywów i wtyczek, kopiami zapasowymi, drobnymi poprawkami, kontrolą działania formularzy oraz wsparciem technicznym przy zmianach na stronie.</p>
+                </article>
+            </div>
+        </section>
+        <!-- SEKCJA PORTFOLIO -->
+        <section class="page-section portfolio-section reveal-on-scroll" id="portfolio">
+            <h2>Najnowsze Projekty</h2>
+            <div class="portfolio-grid">
+                <article class="portfolio-card reveal-on-scroll">
+                    <img src="https://placehold.co/800x600/050807/39ff88?text=Projekt+WordPress" alt="Screen projektu WordPress" loading="lazy" decoding="async">
+                    <div class="portfolio-card__content">
+                        <h5>Strona Firmowa WordPress</h5>
+                        <p>Responsywna strona firmowa oparta o WordPress, przygotowana z myślą o czytelnej prezentacji usług, szybkim ładowaniu i wygodnej edycji treści w panelu.</p>
+                        <a class="button button--outline" href="single-project.html">WIĘCEJ INFORMACJI</a>
+                    </div>
+                </article>
+                <article class="portfolio-card reveal-on-scroll">
+                    <img src="https://placehold.co/800x600/050807/39ff88?text=Szablon+HTML5" alt="Screen projektu szablonu HTML5" loading="lazy" decoding="async">
+                    <div class="portfolio-card__content">
+                        <h5>Szablon HTML5 Dla Usług</h5>
+                        <p>Nowoczesny szablon HTML5 z terminalowym charakterem, semantyczną strukturą, responsywną siatką oraz sekcjami przygotowanymi pod dalsze wdrożenie.</p>
+                        <a class="button button--outline" href="single-project.html">WIĘCEJ INFORMACJI</a>
+                    </div>
+                </article>
+                <article class="portfolio-card reveal-on-scroll">
+                    <img src="https://placehold.co/800x600/050807/39ff88?text=Panel+WordPress" alt="Screen projektu panelu WordPress" loading="lazy" decoding="async">
+                    <div class="portfolio-card__content">
+                        <h5>Dedykowany Panel WordPress</h5>
+                        <p>Rozbudowa strony WordPress o własne typy wpisów, pola edycyjne i uporządkowaną strukturę danych, dzięki której zarządzanie treścią jest prostsze.</p>
+                        <a class="button button--outline" href="single-project.html">WIĘCEJ INFORMACJI</a>
+                    </div>
+                </article>
+            </div>
+            <div class="portfolio-actions">
+                <a class="button button--primary" href="portfolio.html">WIĘCEJ PROJEKTÓW</a>
+            </div>
+        </section>
+        <!-- SEKCJA BLOG -->
+        <section class="page-section blog-section reveal-on-scroll" id="blog">
+            <h2>Najnowsze Posty</h2>
+            <div class="blog-grid">
+                <article class="blog-card reveal-on-scroll">
+                    <img src="https://placehold.co/800x600/050807/39ff88?text=WordPress+Tips" alt="Screen wpisu o WordPress" loading="lazy" decoding="async">
+                    <div class="blog-card__content">
+                        <h5>Jak Przyspieszyć Stronę WordPress</h5>
+                        <div class="blog-card__meta">
+                            <span>WordPress</span>
+                            <time datetime="2026-06-04">04.06.2026</time>
+                        </div>
+                        <p>Krótki przegląd technicznych działań, które pomagają ograniczyć czas ładowania strony, poprawić wynik Core Web Vitals i uporządkować zasoby motywu.</p>
+                        <a class="button button--outline" href="single-post.html">CZYTAJ DALEJ</a>
+                    </div>
+                </article>
+                <article class="blog-card reveal-on-scroll">
+                    <img src="https://placehold.co/800x600/050807/39ff88?text=Frontend" alt="Screen wpisu o frontendzie" loading="lazy" decoding="async">
+                    <div class="blog-card__content">
+                        <h5>Semantyczny HTML W Praktyce</h5>
+                        <div class="blog-card__meta">
+                            <span>Frontend</span>
+                            <time datetime="2026-05-28">28.05.2026</time>
+                        </div>
+                        <p>Opis najważniejszych zasad budowania czytelnej struktury HTML, która ułatwia stylowanie, poprawia dostępność i pomaga w dalszym rozwijaniu projektu.</p>
+                        <a class="button button--outline" href="single-post.html">CZYTAJ DALEJ</a>
+                    </div>
+                </article>
+                <article class="blog-card reveal-on-scroll">
+                    <img src="https://placehold.co/800x600/050807/39ff88?text=AI+Tools" alt="Screen wpisu o narzędziach AI" loading="lazy" decoding="async">
+                    <div class="blog-card__content">
+                        <h5>AI W Pracy Frontend Developera</h5>
+                        <div class="blog-card__meta">
+                            <span>AI</span>
+                            <time datetime="2026-05-14">14.05.2026</time>
+                        </div>
+                        <p>Praktyczne przykłady wykorzystania narzędzi AI przy analizie kodu, tworzeniu wariantów treści, refaktoryzacji oraz szybszym przygotowaniu komponentów.</p>
+                        <a class="button button--outline" href="single-post.html">CZYTAJ DALEJ</a>
+                    </div>
+                </article>
+            </div>
+            <div class="blog-actions">
+                <a class="button button--primary" href="blog.html">WIĘCEJ POSTÓW</a>
+            </div>
+        </section>
+        <!-- SEKCJA KONTAKT -->
+        <section class="page-section contact-section reveal-on-scroll" id="kontakt">
+            <h2>Kontakt</h2>
+            <div class="contact-grid">
+                <div class="contact-column contact-details">
+                    <h3>Dane Kontaktowe</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <span>Adres E-mail</span>
+                            <a href="mailto:kontakt@mariuszkowal.pl">kontakt@mariuszkowal.pl</a>
+                        </li>
+                        <li>
+                            <span>Nr Telefonu</span>
+                            <a href="tel:+48123456789">+48 123 456 789</a>
+                        </li>
+                        <li>
+                            <span>Adres</span>
+                            <p>Polska, praca zdalna</p>
+                        </li>
+                        <li>
+                            <span>Godziny Pracy</span>
+                            <p>Poniedziałek - Piątek, 09:00 - 17:00</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-column contact-form-wrapper">
+                    <form class="contact-form" action="#" method="post">
+                        <label for="contact-name">Imię i Nazwisko</label>
+                        <input id="contact-name" name="name" type="text" autocomplete="name" required>
+
+                        <label id="contact-subject-label">Temat Wiadomości</label>
+                        <div class="custom-select" data-custom-select>
+                            <input id="contact-subject" name="subject" type="hidden" required>
+                            <button class="custom-select__button" type="button" aria-labelledby="contact-subject-label contact-subject-value" aria-haspopup="listbox" aria-expanded="false">
+                                <span id="contact-subject-value">Wybierz Temat</span>
+                                <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="custom-select__list" role="listbox" aria-labelledby="contact-subject-label">
+                                <button type="button" role="option" data-value="Konfiguracja Serwera VPS">Konfiguracja Serwera VPS</button>
+                                <button type="button" role="option" data-value="Projekt Szablonu HTML5">Projekt Szablonu HTML5</button>
+                                <button type="button" role="option" data-value="Programowanie Motywu WordPress">Programowanie Motywu WordPress</button>
+                                <button type="button" role="option" data-value="Programowanie Wtyczek WordPress">Programowanie Wtyczek WordPress</button>
+                                <button type="button" role="option" data-value="Kompletna Strona WordPress">Kompletna Strona WordPress</button>
+                                <button type="button" role="option" data-value="Opieka Nad Stroną WordPress">Opieka Nad Stroną WordPress</button>
+                                <button type="button" role="option" data-value="SEO / Tworzenie Treści">SEO / Tworzenie Treści</button>
+                                <button type="button" role="option" data-value="Inne - Opisz Problem">Inne - Opisz Problem</button>
+                            </div>
+                        </div>
+
+                        <label for="contact-message">Treść Wiadomości</label>
+                        <textarea id="contact-message" name="message" rows="7" required></textarea>
+
+                        <button class="button button--primary" type="submit">WYŚLIJ WIADOMOŚĆ</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- STOPKA STRONY -->
+    <footer class="site-footer">
+        <p>&copy; 2026 MARIUSZ KOWAL. WSZELKIE PRAWA ZASTRZEŻONE.</p>
+    </footer>
+    <!-- GŁÓWNY SKRYPT STRONY -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
