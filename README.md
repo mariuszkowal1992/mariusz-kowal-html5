@@ -1,3 +1,5 @@
+# EN:
+
 # MARIUSZ KOWAL - HTML5 Portfolio
 
 A static portfolio website template built with HTML5, CSS3, and JavaScript. This project showcases the structure of a personal website tailored for a frontend developer, WordPress developer, and freelancer.
@@ -71,6 +73,8 @@ This code is hosted in this repository strictly for presentation and portfolio p
 Mariusz Kowal
 
 ***
+
+# PL:
 
 # MARIUSZ KOWAL - Portfolio HTML5
 
